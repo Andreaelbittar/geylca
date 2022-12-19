@@ -8,9 +8,13 @@ import { ElectronicComponent } from './electronic/electronic.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { ButtomProductComponent } from './buttom-product/buttom-product.component';
+import { ServicesComponent } from './services/services.component';
+import { OurServicesComponent } from './our-services/our-services.component';
+import { BrandsSliderComponent } from './brands-slider/brands-slider.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ElectronicComponent, AboutUsComponent, FooterComponent, ButtomProductComponent],
+  declarations: [AppComponent, HeaderComponent, ElectronicComponent, AboutUsComponent, FooterComponent, ButtomProductComponent, ServicesComponent, OurServicesComponent, BrandsSliderComponent, FormComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
