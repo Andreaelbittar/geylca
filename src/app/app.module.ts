@@ -3,18 +3,37 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { ElectronicComponent } from './electronic/electronic.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { FooterComponent } from './footer/footer.component';
-import { ButtomProductComponent } from './buttom-product/buttom-product.component';
-import { OurServicesComponent } from './our-services/our-services.component';
-import { BrandsSliderComponent } from './brands-slider/brands-slider.component';
-import { FormComponent } from './form/form.component';
+import { HeaderComponent } from './home/header/header.component';
+import { ElectronicComponent } from './home/electronic/electronic.component';
+import { AboutUsComponent } from './home/about-us/about-us.component';
+import { FooterComponent } from './home/footer/footer.component';
+import { ButtomProductComponent } from './home/buttom-product/buttom-product.component';
+import { OurServicesComponent } from './home/our-services/our-services.component';
+import { FormComponent } from './home/form/form.component';
+import { ProductsComponent } from './products/products.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+
+const appRoutes:Routes=[
+  {path:'home', component:FooterComponent },
+  {path:'hola', component:ProductsComponent }
+];
+
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ElectronicComponent, AboutUsComponent, FooterComponent, ButtomProductComponent, OurServicesComponent, BrandsSliderComponent, FormComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    ElectronicComponent,
+    AboutUsComponent,
+    FooterComponent,
+    ButtomProductComponent,
+    OurServicesComponent,
+    FormComponent,
+    ProductsComponent,
+    HomeComponent,
+  ],
+  imports: [BrowserModule,AppRoutingModule,RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent],
 })
