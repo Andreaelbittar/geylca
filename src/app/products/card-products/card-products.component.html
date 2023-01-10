@@ -1,0 +1,49 @@
+<H1 class="tittle">PRODUCTOS</H1>
+<div class="container" *ngFor="let prod of products">
+<div class="card">
+    <img class="img" src="{{prod.image}}" alt="{{prod.name}}" >
+    <h1>{{prod.name}}</h1>
+    <p class="price">{{prod.price}}</p>
+    <p>Some text about the jeans..</p>
+    <p><button (click)="inc(prod)">AGREGAR</button></p>
+  </div>
+
+<!--<div class="card">
+    <img class="img"src="{{prod.image}}" alt="{{prod.name}}" >
+    <h1 >{{prod.name}}</h1>
+    <p iclass="price">{{prod.price}}</p>
+    <p>Some text about the jeans..</p>
+    <p><button>AGREGAR</button></p>
+  </div>
+  <div class="card">
+    <img class="img" src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Tailored Jeans</h1>
+    <p class="price">$19.99</p>
+    <p>Some text about the jeans..</p>
+    <p><button>AGREGAR</button></p>
+  </div>
+</div>
+<div class="container">
+    <div class="card">
+        <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>Tailored Jeans</h1>
+        <p class="price">$19.99</p>
+        <p>Some text about the jeans..</p>
+        <p><button>AGREGAR</button></p>
+      </div>
+      <div class="card">
+        <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>Tailored Jeans</h1>
+        <p class="price">$19.99</p>
+        <p>Some text about the jeans..</p>
+        <p><button>AGREGAR</button></p>
+      </div>
+      <div class="card">
+        <img src="jeans3.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>Tailored Jeans</h1>
+        <p class="price">$19.99</p>
+        <p>Some text about the jeans..</p>
+        <p><button>AGREGAR</button></p>
+      </div>
+    -->
+    </div>

@@ -13,9 +13,12 @@ import { FormComponent } from './home/form/form.component';
 import { ProductsComponent } from './products/products.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { CardProductsComponent } from './products/card-products/card-products.component';
+import { CartComponent } from './products/cart/cart.component';
+
 
 const appRoutes:Routes=[
-  {path:'home', component:FooterComponent },
+  {path:'', component:HomeComponent },
   {path:'hola', component:ProductsComponent }
 ];
 
@@ -32,6 +35,9 @@ const appRoutes:Routes=[
     FormComponent,
     ProductsComponent,
     HomeComponent,
+    CardProductsComponent,
+    CartComponent,
+
   ],
   imports: [BrowserModule,AppRoutingModule,RouterModule.forRoot(appRoutes)],
   providers: [],

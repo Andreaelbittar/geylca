@@ -1,0 +1,46 @@
+<div>
+  <div class="title">
+    <p>CARRITO <i class="cart fa-solid fa-cart-shopping"></i></p>
+  </div>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>PRODUCTO(S)</th>
+        <th>CANTIDAD</th>
+        <th>MONTO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th id="x">prueba1</th>
+        <th>prueba1.1</th>
+        <th>prueba1.2</th>
+      </tr>
+      <tr>
+        <th>prueba2</th>
+        <th>prueba2.1</th>
+        <th>prueba2.2</th>
+      </tr>
+    </tbody>
+  </table>
+  <div class="container">
+    <button id="button" type="button" class="btn btn-danger">PEDIR</button>
+  </div>
+</div>
+<div class="contenedor">
+  <div class="row text-center mt-5">
+    <div class="col-md-12 col-12">
+      <button
+        (click)="numero = numero - 1"
+        class="btn btn-primary bmd-btn-fab btn-fab-sa">
+        <i class="fa-solid fa-minus"></i>
+      </button>
+      <span> {{ numero }} </span>
+      <button
+        (click)="numero = numero + 1"
+        class="btn btn-primary bmd-btn-fab btn-fab-sa">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+  </div>
+</div>
