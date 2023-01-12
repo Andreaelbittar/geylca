@@ -1,15 +1,22 @@
-<header class="menu">
-  <img class=""
-   routerLink=""
-    class="logo"
-    src="../../assets/img/geylca-header.png"
-    alt="Logo"
-  />
-  <nav class="nav">
-    <a href="/#aboutus" class="enlace_menu box">Quienes Somos</a>
-    <a href="/#services" class="enlace_menu">Servicios</a>
-    <a routerLink="products" class="enlace_menu">Productos</a>
-    <button class="button_contact">CONTACTANOS</button>
-    <button class="button_shop"><i class="cart fa-solid fa-cart-shopping"></i></button>
-  </nav>
-</header>
+<header class="header">
+  <div class="headercenter">
+    <div class="center">
+      <a routerLink="home">
+        <img class="logo" src="../../assets/img/geylca-header.png" alt="Logo" />
+      </a>
+      <div (click)="setActive()" class="hamburguer"><i class="fa-solid fa-bars"></i></div>
+    </div>
+   
+    <div class="navigation"
+    [ngClass]="{'ocultar': active}">
+      <ul class="menu">
+        <li><a href="/#aboutus" >Quienes Somos</a></li>
+        <li><a href="/#services">Servicios</a></li>
+        <li><a routerLink="products">Productos</a></li>
+        <a href="https://api.whatsapp.com/send?phone=573228631387&text=Hola, Me interesa saber más sobre los productos y servicios"
+          ><button class="button_contact">CONTACTANOS</button></a>
+       <a routerLink="products"> <button class="button_shop"><i class="cart fa-solid fa-cart-shopping"></i></button></a>
+      </ul>
+    </div>
+
+  </div>

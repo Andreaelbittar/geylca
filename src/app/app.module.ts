@@ -18,8 +18,8 @@ import { CartComponent } from './products/cart/cart.component';
 
 
 const appRoutes:Routes=[
-  {path:'', component:HomeComponent },
-  {path:'hola', component:ProductsComponent }
+  {path:'home', component:HomeComponent },
+  {path:'products', component:ProductsComponent }
 ];
 
 

@@ -1,12 +1,15 @@
 <H1 class="tittle">PRODUCTOS</H1>
-<div class="container" *ngFor="let prod of products">
-<div class="card">
-    <img class="img" src="{{prod.image}}" alt="{{prod.name}}" >
-    <h1>{{prod.name}}</h1>
-    <p class="price">{{prod.price}}</p>
-    <p>Some text about the jeans..</p>
-    <p><button (click)="inc(prod)">AGREGAR</button></p>
+<div class="center">
+  <div class="grid-layaout" *ngFor="let prod of products">
+    <div class="card">
+      <img class="img" src="{{ prod.image }}" alt="{{ prod.name }}" />
+      <h2>{{ prod.name }}</h2>
+      <p class="price">{{ prod.price }}</p>
+      <p>Disponibles {{ prod.qnt }}</p>
+      <p><button (click)="inc(prod)">AGREGAR</button></p>
+    </div>
   </div>
+</div>
 
 <!--<div class="card">
     <img class="img"src="{{prod.image}}" alt="{{prod.name}}" >
@@ -46,4 +49,3 @@
         <p><button>AGREGAR</button></p>
       </div>
     -->
-    </div>

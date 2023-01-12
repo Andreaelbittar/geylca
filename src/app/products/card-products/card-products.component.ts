@@ -1,4 +1,7 @@
+import { DOCUMENT } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { from } from 'rxjs';
+
 @Component({
   selector: 'app-card-products',
   templateUrl: './card-products.component.html',
@@ -45,10 +48,13 @@ export class CardProductsComponent implements OnInit {
   ];
 
   inc(prod: any) {
-     console.log(prod.qnt);
-    
+    console.log(prod.name);
   }
 
   constructor() {}
+  private newMethod() {
+    print();
+  }
+
   ngOnInit(): void {}
 }

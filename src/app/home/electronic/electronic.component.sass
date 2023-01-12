@@ -10,11 +10,15 @@
 .text
     position: absolute
     color: white
-    left: 750px
-    top: 550px
-    font-size: 5.26em
+    font-size: 4.26em
     text-align: center
     font-weight: bold
+    padding: 0em 0.3em
+.text1
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
 .boxprincipal
     display: flex
     background: #000000
@@ -48,3 +52,29 @@
     justify-content: center
     align-items: center
     text-align: center
+@media only screen and (max-width: 1230px)
+    .text
+        font-size: 3em
+        display: flex
+        justify-content: flex-end
+        align-items: center
+@media only screen and (max-width: 1020px)
+    .text
+        font-size: 2em
+        display: flex
+        justify-content: flex-end
+        align-items: center
+    .install
+        font-size: 1.5em
+    .year
+        width: 14em
+        height: 7em
+    .year p 
+        font-size: 1.5em
+@media only screen and (max-width: 650px)
+    .text
+        font-size: 1em
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
